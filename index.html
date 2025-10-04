@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Total Care Property Solutions</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="imgs/tcps_logo.png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="index.css">
+  <style>
+    #login {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #28a745;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#login:hover {
+  background-color: #1e7e34;
+}
+  </style>
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header id="header">
+    <nav id="head_container">
+      <img src="imgs/tcps_h_logo.png" alt="Total Care Property Solutions Logo" class="logo">
+      <ul class="nav_links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="btns">    
+      <a href="#contact"><button id="request">Book Now</button></a>
+      <a href="login.php"><button id="login">Admin</button></a>
+    </div>
+
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero_content">
+      <h1>A Spotless Space, Every Time </h1>
+      <p>Professional cleaning services for homes, apartments, and offices. Trust us to keep your property shining.</p>
+      <a href="#contact"><button class="cta">Get a Quote</button></a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+<section id="about">
+  <h2>About Us</h2>
+  <p>
+    At Total Care Property Solutions, we provide top-quality cleaning services tailored to your needs.
+    Our trained staff use eco-friendly products to ensure a healthy and spotless environment.
+  </p>
+  <p>
+    We specialize in residential and commercial cleaning, from apartments and homes to offices and move-in/move-out services.
+    Our team is fully trained, background-checked, and equipped with the latest cleaning tools to deliver exceptional results.
+    Customer satisfaction is our top priority, and we always aim to exceed expectations.
+  </p>
+  <p>
+    Whether it’s regular maintenance cleaning or deep cleaning after renovations, we customize our services
+    to suit your schedule and requirements. We believe a clean space enhances productivity, comfort, and wellbeing.
+  </p>
+  <a href="about.html" class="readmore">Read More →</a>
+</section>
+
+
+  <!-- Services Section -->
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="service_grid">
+    <div class="service_card">
+      <h3>🏠 Apartment Cleaning</h3>
+      <p>Regular cleaning and maintenance for apartments, keeping every corner spotless and fresh.</p>
+    </div>
+    <div class="service_card">
+      <h3>🧹 Deep Cleaning</h3>
+      <p>Thorough cleaning of your property including carpets, windows, and hard-to-reach areas.</p>
+    </div>
+    <div class="service_card">
+      <h3>🏢 Office Cleaning</h3>
+      <p>Professional office cleaning for a healthy and productive workplace environment.</p>
+    </div>
+    <div class="service_card">
+      <h3>🚚 Move-In / Move-Out Cleaning</h3>
+      <p>Complete cleaning before moving in or after moving out to ensure a spotless property.</p>
+    </div>
+    <!-- <div class="service_card">
+      <h3>🧼 Carpet & Upholstery Cleaning</h3>
+      <p>Specialized cleaning for carpets, rugs, and furniture to remove dust, stains, and allergens.</p>
+    </div>
+    <div class="service_card">
+      <h3>🪟 Window & Glass Cleaning</h3>
+      <p>Crystal-clear window and glass cleaning for homes and offices, inside and out.</p>
+    </div>
+    <div class="service_card">
+      <h3>🧴 Sanitization & Disinfection</h3>
+      <p>Ensure a germ-free environment with our professional sanitization services.</p>
+    </div> -->
+  </div>
+  <a href="services.html" class="readmore">Read More Services →</a>
+</section>
+
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Have questions or want to book a cleaning? Reach out to us!</p>
+
+  <div class="contact_cards">
+    <div class="contact_card">
+      <span>📧</span>
+      <h3>Email</h3>
+      <p><a href="mailto:gautamb2015@gmail.com">gautamb2015@ <br>gmail.com</a></p>
+    </div>
+    <div class="contact_card">
+      <span>📞</span>
+      <h3>Phone</h3>
+      <p><a href="tel:+61452514024">+61 452 514 024</a></p>
+    </div>
+    <div class="contact_card">
+      <span>📍</span>
+      <h3>Address</h3>
+      <p>Australia</p>
+    </div>
+  </div>
+
+  <div class="contact_form_container">
+    <form class="contact_form" action="db.php" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="cta">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+<footer>
+  <div class="footer_container">
+    <!-- Left: Logo & Tagline -->
+    <div class="footer_brand">
+      <img src="imgs/tcps_h_logo.png" alt="Total Care Property Solutions Logo">
+      <p>Reliable cleaning services for homes, apartments, and offices.</p>
+    </div>
+
+    <!-- Middle: Quick Links -->
+    <div class="footer_links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Right: Contact Info -->
+    <div class="footer_contact">
+      <h4>Contact Us</h4>
+      <p>Email: <a href="mailto:gautamb2015@gmail.com">gautamb2015@gmail.com</a></p>
+      <p>Phone: <a href="tel:+61452514024">+61 452 514 024</a></p>
+      <p>Address: Australia</p>
+
+      <div class="socials">
+        <a href="#"><img src="imgs/facebook-svgrepo-com.svg" alt="Facebook"></a>
+        <a href="#"><img src="imgs/instagram-svgrepo-com.svg" alt="Instagram"></a>
+        <a href="#"><img src="imgs/x.svg" alt="X"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer_bottom">
+    <p>&copy; 2025 Total Care Property Solutions. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
