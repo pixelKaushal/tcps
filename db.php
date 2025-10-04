@@ -50,8 +50,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->close();
 }
 // Insert default admin safely
-$adminUser = "bamdev2025";
-$adminPass = password_hash("topmanufan", PASSWORD_DEFAULT);
+$adminUser = "yourusername";
+$adminPass = password_hash("yourpw", PASSWORD_DEFAULT);
 
 $conn->query("INSERT INTO admins (username, password) 
               VALUES ('$adminUser', '$adminPass') 
@@ -60,3 +60,4 @@ $conn->query("INSERT INTO admins (username, password)
 echo "Admin bamdev2025 has been added successfully!";
 $conn->close();
 ?>
+
